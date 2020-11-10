@@ -1,9 +1,10 @@
 #include "Headers.h"
 #include "Observer.h"
 #include "Observable.h"
+#include "SaferObservable.h"
 using namespace std;
 
-class Person : public Observable<Person>
+class Person : public SaferObservable<Person>
 {
     int age;
 public:
